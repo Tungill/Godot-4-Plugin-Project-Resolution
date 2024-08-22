@@ -11,10 +11,10 @@ config_version=5
 [application]
 
 config/name="Godot-4-plugin-project-resolution"
+config/tags=PackedStringArray("plugin")
 run/main_scene="res://TestScene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
-config/tags=PackedStringArray("plugin")
 
 [display]
 
