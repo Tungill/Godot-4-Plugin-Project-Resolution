@@ -1,7 +1,7 @@
 @tool
 extends EditorPlugin
 
-const POPUP_BUTTON_TEXT = "Project Resolution"
+const POPUP_BUTTON_TEXT = "Game Resolution"
 const MENU_BUTTON_TOOLTIP = "Quickly change and test different Game Window Resolution settings"
 const PLUGIN_SELF_NAME = "ProjectResolution" # this variable must match the name of the plugin
 
@@ -221,14 +221,14 @@ func _set_resolution(id) -> void:
 		hide_larger_resolution = !hide_larger_resolution
 		print("Hide Larger Resolution: "+str(hide_larger_resolution))
 	else:
-		# Set Project Resolution settings
+		# Set Game Resolution settings
 		if item_name == "Native":
 			item_name = str(DisplayServer.screen_get_size().x) + "x" + str(DisplayServer.screen_get_size().y)
 		
 		var res = item_name.split("x")
 		ProjectSettings.set_setting("display/window/size/window_width_override", res[0])
 		ProjectSettings.set_setting("display/window/size/window_height_override", res[1])
-		print("Set Project Resolution: " + str(ProjectSettings.get_setting("display/window/size/window_width_override"))+"x"+str(ProjectSettings.get_setting("display/window/size/window_height_override")))
+		print("Set Game Resolution: " + str(ProjectSettings.get_setting("display/window/size/window_width_override"))+"x"+str(ProjectSettings.get_setting("display/window/size/window_height_override")))
 		
 		# Update menu button name by resolution
 		_plugin_menu_btn.text = item_name
