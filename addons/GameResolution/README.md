@@ -1,15 +1,13 @@
-![Image](https://img.itch.zone/aW1hZ2UvMTM3ODU2OC84MDI4MDExLnBuZw==/original/ZQ1nVq.png)
-
-# Godot Plugin Project Resolution (for Godot 4.x)
+# Godot custom Plugin Game Resolution (for Godot 4.x)
 
 Godot plugin to quickly change and test Game Window Resolution settings.
 
 Useful to test and prevent your UI from being inconsistent in different resolutions.
 
-Custom version from Tungill which:
-	- Added Steam Deck & Nintendo Switch resolutions
-	- Added the option to show/hide larger resolution
-	- Updated buttons and separators names
+Custom version by Tungill which:
+- Added Steam Deck & Nintendo Switch resolutions
+- Added the option to show/hide larger resolution
+- Updated buttons and separators names
 
 ## Download
 
@@ -20,11 +18,10 @@ Original code from:
 - or github repository at https://github.com/Danim3D/Godot-4-Plugin-Project-Resolution
 
 
-
 ## Installation
 
 - Copy the contents of the "addons" directory to the "addons" directory of your Godot Project
-- Go in "Project -> Project Settings -> Plugins (tab)" and enable "ProjectResolution"
+- Go in "Project -> Project Settings -> Plugins (tab)" and enable "GameResolution"
 
 
 ## Usage
